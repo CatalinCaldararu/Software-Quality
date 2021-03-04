@@ -1,5 +1,4 @@
 package ro.ase.cts.clase;
-
 import java.util.Arrays;
 
 public class Angajat extends Aplicant{
