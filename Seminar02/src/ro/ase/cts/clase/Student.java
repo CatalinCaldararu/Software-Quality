@@ -4,6 +4,7 @@ import java.util.Arrays;
 public class Student extends Aplicant {
 	protected String facultate;
 	protected int an_studii;
+	private static int sumaFinantata = 20;
 	
 	
 	public String getFacultate() {
@@ -19,7 +20,12 @@ public class Student extends Aplicant {
 		this.an_studii = an_studii;
 	}
 
-
+	public static int getSumaFinantata() {
+		return sumaFinantata;
+	}
+	public static void setSumaFinantata(int sumaFinantata) {
+		Student.sumaFinantata = sumaFinantata;
+	}
 	public Student() {
 		super();
 		
@@ -36,10 +42,9 @@ public class Student extends Aplicant {
 	}
 	
 	
-	public int finantare() {
-		int s=20;
-		System.out.println("Studentul "+getNume()+" "+getPrenume()+" primeste"+s+" Euro/zi in proiect.");
-		return s;
+public void afiseazaSumaFinantata() {
+		
+		System.out.println("Studentul"+getNume()+" "+getPrenume()+" primeste"+this.sumaFinantata+" Euro/zi in proiect.");
 	}
 	
 }
