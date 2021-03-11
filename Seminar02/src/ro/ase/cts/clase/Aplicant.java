@@ -40,12 +40,8 @@ public abstract class Aplicant{
 		this.punctaj = punctaj;
 	}
 	
-	
-
-	
 	public Aplicant() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 	public Aplicant(String nume, String prenume, int varsta, int punctaj, int nr_proiecte, String[] denumireProiect) {
 		super();
@@ -59,8 +55,23 @@ public abstract class Aplicant{
 	public int getNr_proiecte() {
 		return nr_proiecte;
 	}
+	
+	public String[] getDenumireProiect() {
+		return denumireProiect;
+	}
+	
 	public void setNr_proiecte(int nr_proiecte) {
 		this.nr_proiecte = nr_proiecte;
 	}
-
+	
+	public void setDenumireProiect(String[] denumireProiect) {
+		this.denumireProiect = denumireProiect;
+	}
+	
+	public void setDenumireProiecte(int nrProiecte, String[] denumireProiect) {
+		this.nr_proiecte = nrProiecte;
+		this.denumireProiect=denumireProiect;
+	}
+	
+	
 }
