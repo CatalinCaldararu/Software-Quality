@@ -1,4 +1,5 @@
 package ro.ase.cts.main;
+import ro.ase.cts.clase.ConcursArcasi;
 import ro.ase.cts.clase.DepartamentFinanciar;
 import ro.ase.cts.clase.DepartamentFinanciarEager;
 
@@ -20,5 +21,11 @@ public class Main {
 		
 		System.out.println(departamentFinanciar1.toString());
 		System.out.println(departamentFinanciar1.toString());
+		
+		ConcursArcasi concursArcasi1= ConcursArcasi.getInstance(100,"Urluescu",3000);
+		ConcursArcasi concursArcasi2= ConcursArcasi.getInstance(200,"Mateescu",5000);
+		
+		System.out.println(concursArcasi1.toString());
+		System.out.println(concursArcasi2.toString());
 	}
 }
