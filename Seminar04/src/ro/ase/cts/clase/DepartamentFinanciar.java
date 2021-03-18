@@ -1,6 +1,12 @@
 package ro.ase.cts.clase;
 
 public class DepartamentFinanciar {
+@Override
+	public String toString() {
+		return "DepartamentFinanciar [nrAngajati=" + nrAngajati + ", director=" + director + ", salariulDeBaza="
+				+ salariulDeBaza + "]";
+	}
+
 private int nrAngajati;
 private String director;
 private double salariulDeBaza;
