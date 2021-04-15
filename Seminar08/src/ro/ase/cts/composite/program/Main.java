@@ -25,6 +25,7 @@ public class Main {
 	sectiuneDesert.addComponenta(itemFrappe);
 	
 	meniu.afiseazaDescriere();
+	//comm
 	}
 
 }
