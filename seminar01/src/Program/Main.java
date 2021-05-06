@@ -1,4 +1,4 @@
-package seminar01;
+package Program;
 
 import clase.Girafa;
 import clase.Zebra;
@@ -8,8 +8,6 @@ import clase.Zookeper;
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		System.out.println("Hello guys");
 		Zoo zoo = new Zoo();
 		Zookeper keeper = new Zookeper();
 		keeper.setName("Marcel");
