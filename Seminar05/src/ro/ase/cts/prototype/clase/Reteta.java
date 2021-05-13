@@ -1,4 +1,4 @@
-package ro.ase.cts.prototype;
+package ro.ase.cts.prototype.clase;
 
 public class Reteta implements RetetaMedicament {
 	private String solutie;
@@ -11,6 +11,12 @@ public class Reteta implements RetetaMedicament {
 		return cantitate;
 	}
 	
+	public void setSolutie(String solutie) {
+		this.solutie = solutie;
+	}
+	public void setCantitate(int cantitate) {
+		this.cantitate = cantitate;
+	}
 	public Reteta() {
 		super();
 	}
