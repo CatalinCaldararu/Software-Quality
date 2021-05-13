@@ -2,6 +2,7 @@ package ro.ase.cts.template.program;
 
 import ro.ase.cts.template.clase.Spectator;
 import ro.ase.cts.template.clase.SpectatorAbstract;
+import ro.ase.cts.template.clase.SpectatorVip;
 
 public class Main {
 
@@ -11,6 +12,9 @@ public class Main {
 		
 		spectator1.intrareSpectatorStadion();
 		spectator2.intrareSpectatorStadion();
+		
+		SpectatorVip spectator3 =new SpectatorVip("Alin");
+		spectator3.intrareSpectatorStadion();
 	}
 
 }
