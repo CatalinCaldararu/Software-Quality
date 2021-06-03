@@ -4,7 +4,11 @@ import static org.junit.Assert.*;
 
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 
+import categorii.TesteGetPromovabilitate;
+import categorii.TesteNormale;
+import categorii.TesteUrgente;
 import clase.Grupa;
 import clase.Student;
 
@@ -26,6 +30,7 @@ public class TesteGrupa {
 	}
 	
 	@Test
+	@Category({TesteGetPromovabilitate.class})
 	public void testGetPromovabilitateRight()
 	{
 		Student studentMarcel = new Student("Marcel");
@@ -42,12 +47,14 @@ public class TesteGrupa {
 	}
 	
 	@Test
+	@Category({TesteGetPromovabilitate.class})
 	public void testGetPromovabilitateLowerBoundary()
 	{
 		assertEquals(0, grupa.getPromovabilitate(), 0.05);
 	}
 	
 	@Test
+	@Category({TesteGetPromovabilitate.class})
 	public void testGetPromovabilitateUpperBoundary()
 	{
 		Grupa grupaNoua = new Grupa(1076);
@@ -66,6 +73,7 @@ public class TesteGrupa {
 	}
 	
 	@Test(expected = IllegalArgumentException.class)
+	@Category({TesteGetPromovabilitate.class})
 	public void testGetPromovabilitateError()
 	{
 		Grupa grupaNoua = new Grupa(1080);
@@ -73,12 +81,14 @@ public class TesteGrupa {
 	}
 	
 	@Test(timeout =500)
+	@Category({TesteGetPromovabilitate.class})
 	public void testGetPromovabilitatePerformance()
 	{
 		grupa.getPromovabilitate();
 	}
 	
 	@Test
+	@Category({TesteUrgente.class})
 	public void testConstructorRight()
 	{
 		Grupa grupa = new Grupa(1077);
@@ -86,6 +96,7 @@ public class TesteGrupa {
 	}
 	
 	@Test
+	@Category({TesteNormale.class, TesteUrgente.class})
 	public void testConstructorLowerBoundary()
 	{
 		Grupa grupa = new Grupa(1000);
@@ -93,6 +104,7 @@ public class TesteGrupa {
 	}
 	
 	@Test
+	@Category({TesteUrgente.class})
 	public void testConstructorUpperBoundary()
 	{
 		Grupa grupa = new Grupa(1100);
@@ -101,6 +113,7 @@ public class TesteGrupa {
 	
 	
 	@Test(expected = IllegalArgumentException.class)
+	@Category({TesteNormale.class})
 	public void testConstructorErrorMaiMic()
 	{
 		Grupa grupa = new Grupa(100);
@@ -108,6 +121,7 @@ public class TesteGrupa {
 	}
 	
 	@Test(expected = IllegalArgumentException.class)
+	@Category({TesteNormale.class})
 	public void testConstructorErrorMaiMare()
 	{
 		Grupa grupa = new Grupa(1101);
@@ -115,12 +129,14 @@ public class TesteGrupa {
 	}
 	
 	@Test(timeout =500)
+	@Category({TesteNormale.class})
 	public void testConstructorPerformance()
 	{
 		Grupa grupa = new Grupa(1077);
 	}
 	
 	@Test
+	@Category({TesteNormale.class})
 	public void testConstructorExistence()
 	{
 		Grupa grupa = new Grupa(1077);
