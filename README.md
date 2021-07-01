@@ -1,2 +1,2 @@
-Design patterns in Java
+Design patterns and testing in Java
 
