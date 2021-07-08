@@ -1,3 +1,3 @@
 Design patterns and testing in Java.
 
-![design](https://user-images.githubusercontent.com/22495045/124978247-33664f00-e03a-11eb-9770-60e317ff75f9.png)
+![design-patterns](https://user-images.githubusercontent.com/22495045/124978475-8213e900-e03a-11eb-96ec-fbc1a1af3066.jpg)
